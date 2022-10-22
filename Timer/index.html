@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CountDown Timer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <!doctype html>
+    <html lang="en">
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <style>
+        .main {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        span {
+            margin: 10px;
+        }
+
+        .hour {
+            width: 300px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .btn-cust {
+            margin: 0 14px;
+        }
+    </style>
+
+    <body>
+        <div class="main bg-dark text-white">
+            <h1 class="fs-1"><u>CountDown Timer<i class="fa-solid fa-clock px-2 mx-2"></i></u> </h1>
+            <h1 class="fs-3 hour"><span>Minutes</span><input class="form-control w-25 bg-transparent text-white" type="number" value="0" id="min" placeholder="Enter minutes"></h1>
+            <h1 class="fs-3 hour"><span>Seconds</span><input class="form-control w-25 bg-transparent text-white" type="number" value="0" id="sec" placeholder="Enter seconds"></h1>
+            <h1 class="fs-3 hour"><span>MiliSeconds</span><span class="form-control w-25 bg-transparent text-white"id="msec">0</span></h1>
+            <div class="px-2">
+                <button id="btnstart" class="btn btn-primary rounded-pill mx-2" onclick="startbtn()">Start<i
+                        class="fa-solid fa-play px-1"></i></button>
+                        
+                <button id="btnpause" class="btn btn-info rounded-pill mx-2" onclick="pausebtn()">Pause<i class="fa-solid fa-pause px-1"></i></button>
+                <button id="btnrestart" class="btn btn-danger rounded-pill mx-2 " onclick="reset()">Restart<i
+                        class="fa-solid fa-rotate-right px-1"></i></button>
+            </div>
+        </div>
+
+
+    </body>
+
+    </html>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
+    integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js"></script>
+
+</html>
